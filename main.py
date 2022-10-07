@@ -37,7 +37,7 @@ class NeuralNet(nn.Module):
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
 
-num_epochs = 10         # 学習を何回、繰り返すか　（エポックと呼ばれる。）
+num_epochs = 100         # 学習を何回、繰り返すか　（エポックと呼ばれる。）
 num_batch = 100         # 1度に、何枚の画像を取出すか
 learning_rate = 0.001   # 学習率
 image_size = 28*28      # 画像の画素数(幅x高さ)
