@@ -1,4 +1,4 @@
-from main import*
+#from main import*
 
 # GPUが使える場合は、GPU使用モードにする。
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
